@@ -11,10 +11,10 @@ import { randomUUID } from "crypto";
 const formSchema = authFormSchema("sign-up");
 
 interface CustomInput {
-  control: Control<z.infer<typeof formSchema>>;
-  name: FieldPath<z.infer<typeof formSchema>>;
-  label: string;
-  placeholder: string;
+  control: Control<z.infer<typeof formSchema>>,
+  name: FieldPath<z.infer<typeof formSchema>>,
+  label: string,
+  placeholder: string,
 }
 
 const CustomInput = ({ control, name, label, placeholder }: CustomInput) => {
